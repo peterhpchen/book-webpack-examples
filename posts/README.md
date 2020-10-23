@@ -47,3 +47,7 @@
 ## 最終章: 結尾
 
 30. [終點只是另一個起點](./30-future/README.md)
+
+## 後日談
+
+31. [沒有 webpack 的未來](./31-future-without-webpack/README.md)
