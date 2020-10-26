@@ -50,4 +50,4 @@
 
 ## 後日談
 
-31. [沒有 webpack 的未來](./31-future-without-webpack/README.md)
+31. [使用 Snowpack 以原生模組系統建置專案](./31-snowpack/README.md)
