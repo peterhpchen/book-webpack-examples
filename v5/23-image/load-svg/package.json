@@ -1,0 +1,14 @@
+{
+  "name": "load-svg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "svg-inline-loader": "0.8.2",
+    "webpack": "5.36.2",
+    "webpack-cli": "4.7.0"
+  }
+}

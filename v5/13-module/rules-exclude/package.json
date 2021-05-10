@@ -1,0 +1,13 @@
+{
+  "name": "rules-exclude",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "5.36.2",
+    "webpack-cli": "4.7.0"
+  }
+}

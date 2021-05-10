@@ -1,0 +1,9 @@
+/* https://www.w3.org/TR/css-variables-1/ */
+:root {
+  --demoColor: blue;
+}
+
+.demo {
+  color: blue;
+  color: var(--demoColor);
+}

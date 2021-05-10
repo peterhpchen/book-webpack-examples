@@ -1,0 +1,15 @@
+{
+  "name": "book-webpack-examples-export-array",
+  "version": "5.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "all": "webpack",
+    "prod": "webpack --config-name prod",
+    "dev": "webpack --config-name dev"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  }
+}

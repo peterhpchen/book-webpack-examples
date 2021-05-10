@@ -1,0 +1,12 @@
+{
+  "name": "book-webpack-examples-simple-app",
+  "version": "5.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "http-server": "0.12.3"
+  }
+}

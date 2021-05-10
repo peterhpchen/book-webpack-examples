@@ -1,0 +1,14 @@
+{
+  "name": "simple-source-map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server ./dist & webpack --mode none --watch --devtool source-map",
+    "build": "webpack --mode none --devtool source-map"
+  },
+  "devDependencies": {
+    "webpack": "5.36.2",
+    "webpack-cli": "4.7.0"
+  }
+}

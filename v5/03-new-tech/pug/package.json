@@ -1,0 +1,12 @@
+{
+  "name": "book-webpack-examples-pug",
+  "version": "5.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "pug -O '{\"name\": \"Pug\"}' src -o dist"
+  },
+  "devDependencies": {
+    "pug-cli": "1.0.0-alpha6"
+  }
+}

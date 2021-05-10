@@ -1,0 +1,21 @@
+{
+  "name": "merge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config config/webpack.prod.conf.js",
+    "dev": "webpack --config config/webpack.dev.conf.js"
+  },
+  "devDependencies": {
+    "@babel/core": "7.14.0",
+    "@babel/preset-env": "7.14.1",
+    "babel-loader": "8.2.2",
+    "webpack": "5.36.2",
+    "webpack-cli": "4.7.0",
+    "webpack-merge": "5.7.3"
+  },
+  "dependencies": {
+    "core-js": "3.12.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "multiple-plugins",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "4.0.0-alpha.0",
+    "copy-webpack-plugin": "8.1.1",
+    "webpack": "5.36.2",
+    "webpack-cli": "4.7.0"
+  }
+}

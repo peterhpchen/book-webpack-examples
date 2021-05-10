@@ -1,0 +1,15 @@
+{
+  "name": "output-path",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:argv": "webpack --output-path $PWD/build",
+    "build:argv2": "webpack --output-path build",
+    "build:file": "webpack --config webpack.config.demo.js"
+  },
+  "devDependencies": {
+    "webpack": "5.36.2",
+    "webpack-cli": "4.7.0"
+  }
+}
