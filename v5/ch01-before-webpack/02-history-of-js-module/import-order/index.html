@@ -1,0 +1,15 @@
+<!-- ch01-before-webpack/02-history-of-js-module/import-order/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var outputStr = _.join(['Hello', ', ', 'world', '!'], ''); // Uncaught ReferenceError: _ is not defined
+    </script>
+    <script src="https://unpkg.com/lodash"></script>
+  </head>
+  <body>
+    <script>
+      console.log(outputStr); // undefined
+    </script>
+  </body>
+</html>
