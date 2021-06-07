@@ -1,0 +1,20 @@
+<!-- ch01-before-webpack/04-performance/partial-use/join.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Prevent Uncaught ReferenceError: module is not defined
+      module = {
+        export: window,
+      };
+    </script>
+    <script src="https://unpkg.com/lodash@4.17.21/join.js"></script>
+  </head>
+  <body>
+    <h1>Only join</h1>
+    <a href="./index.html">Go to All</a>
+    <script>
+      console.log(join(['Only', 'join'], ' '));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!-- ch01-before-webpack/04-performance/multiple-import/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="add.js"></script>
+    <script src="subtract.js"></script>
+    <script src="multiply.js"></script>
+    <script src="divide.js"></script>
+  </head>
+  <body>
+    <h1>Multiple Files</h1>
+    <a href="single.html">Go to Single File</a>
+    <script>
+      console.log(add(5, subtract(4, multiply(3, divide(2, 1)))));
+    </script>
+  </body>
+</html>
