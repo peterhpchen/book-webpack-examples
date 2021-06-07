@@ -1,0 +1,10 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "build": "sass src:dist",
+    "dev": "sass --watch src:dist"
+  },
+  "devDependencies": {
+    "sass": "1.34.0"
+  }
+}

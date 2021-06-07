@@ -1,0 +1,10 @@
+/* ch01-before-webpack/03-new-tech/postcss/src/style.css */
+
+/* CSS variables */
+:root {
+  --demoColor: blue;
+}
+
+.demo {
+  color: var(--demoColor);
+}
