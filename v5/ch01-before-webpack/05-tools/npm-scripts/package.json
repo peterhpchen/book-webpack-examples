@@ -1,0 +1,12 @@
+{
+  "description": "ch01-before-webpack/05-tools/npm-scripts/package.json",
+  "scripts": {
+    "prestart": "echo \"Before npm start\"",
+    "start": "echo \"Hello npm start\"",
+    "poststart": "echo \"After npm start\"",
+    "prestart2": "echo \"Before npm start\"",
+    "start2": "echo \"Hello npm run start2\"",
+    "poststart2": "echo \"After npm run start2\""
+  },
+  "license": "MIT"
+}

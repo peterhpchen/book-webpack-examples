@@ -1,0 +1,12 @@
+{
+  "description": "ch01-before-webpack/05-tools/browserify/package.json",
+  "scripts": {
+    "prestart": "browserify main.js > bundle.js",
+    "start": "http-server"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "17.0.0",
+    "http-server": "^0.12.3"
+  }
+}

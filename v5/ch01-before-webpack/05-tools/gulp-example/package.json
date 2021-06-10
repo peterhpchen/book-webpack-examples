@@ -1,0 +1,12 @@
+{
+  "description": "ch01-before-webpack/05-tools/gulp-example/package.json",
+  "scripts": {
+    "start": "gulp start",
+    "start2": "gulp start2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-cli": "2.3.0"
+  }
+}
