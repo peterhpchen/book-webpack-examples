@@ -1,0 +1,11 @@
+{
+  "description": "02-first-webpack/simple-app/package.json",
+  "license": "MIT",
+  "repository": "github:peterhpchen/book-webpack-examples",
+  "scripts": {
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
