@@ -1,0 +1,12 @@
+{
+  "description": "ch02-getting-started/04-use-webpack/cli-plus-file/package.json",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --mode development --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  }
+}

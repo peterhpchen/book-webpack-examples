@@ -1,0 +1,19 @@
+{
+  "description": "ch02-getting-started/04-use-webpack/cli-config/package.json",
+  "license": "MIT",
+  "scripts": {
+    "demo:help": "webpack help",
+    "demo:default": "webpack",
+    "demo:entry": "webpack --entry ./src/index2.js",
+    "demo:entry-omitted": "webpack ./src/index2.js",
+    "demo:entries": "webpack --entry ./src/index.js ./src/index2.js",
+    "demo:entries2": "webpack --entry ./src/index.js --entry ./src/index2.js",
+    "demo:entries-omitted": "webpack ./src/index.js ./src/index2.js",
+    "demo:output": "webpack --output-path ./build",
+    "demo:mode": "webpack --mode development"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  }
+}
