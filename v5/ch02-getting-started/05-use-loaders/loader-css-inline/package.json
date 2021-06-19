@@ -1,0 +1,14 @@
+{
+  "description": "ch02-getting-started/05-use-loaders/loader-css-inline/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "start": "http-server ./dist"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "http-server": "^0.12.3",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
