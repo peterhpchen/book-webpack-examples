@@ -1,0 +1,11 @@
+{
+  "description": "ch02-getting-started/06-use-plugins/internal-plugins/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
