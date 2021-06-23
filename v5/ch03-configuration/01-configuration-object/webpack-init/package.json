@@ -1,0 +1,12 @@
+{
+  "description": "ch03-configuration/01-configuration-object/webpack-init/package.json",
+  "scripts": {
+    "init": "webpack init ../created-by-webpack-init"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.2.0",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
