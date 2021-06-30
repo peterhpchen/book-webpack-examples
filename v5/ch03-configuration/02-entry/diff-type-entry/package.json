@@ -1,0 +1,14 @@
+{
+  "description": "ch03-configuration/02-entry/diff-type-entry/package.json",
+  "scripts": {
+    "build": "webpack --config webpack.config.demo.js",
+    "start": "http-server ./dist"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "http-server": "^0.12.3",
+    "mini-css-extract-plugin": "^1.6.2",
+    "webpack": "^5.41.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "description": "ch03-configuration/02-entry/entry-object-object-filename",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.demo.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.41.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
