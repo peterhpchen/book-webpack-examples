@@ -1,0 +1,16 @@
+{
+  "description": "ch03-configuration/03-output/output-filename-template/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build:name": "webpack --config webpack.config.name.js",
+    "build:id": "webpack --config webpack.config.id.js",
+    "build:fullhash": "webpack --config webpack.config.fullhash.js",
+    "build:contenthash": "webpack --config webpack.config.contenthash.js",
+    "build:chunkhash": "webpack --config webpack.config.chunkhash.js",
+    "build:escape": "webpack --config webpack.config.escape.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.41.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

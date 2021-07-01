@@ -1,0 +1,18 @@
+{
+  "description": "ch03-configuration/03-output/output-publicpath/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "build:error": "webpack --config webpack.config.error.js",
+    "build:auto": "webpack --config webpack.config.auto.js",
+    "start": "http-server ./build"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "http-server": "^0.12.3",
+    "mini-css-extract-plugin": "^1.6.2",
+    "webpack": "^5.41.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[395],{395:(e,s,l)=>{"use strict";l.r(s),l.d(s,{default:()=>u});const u="Hello"}}]);

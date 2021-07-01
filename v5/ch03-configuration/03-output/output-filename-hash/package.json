@@ -1,0 +1,13 @@
+{
+  "description": "ch03-configuration/03-output/output-filename-hash/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^1.6.2",
+    "webpack": "^5.41.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
