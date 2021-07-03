@@ -1,0 +1,14 @@
+{
+  "description": "ch03-configuration/04-resolve/resolve-alias-npm/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

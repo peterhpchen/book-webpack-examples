@@ -1,0 +1,12 @@
+{
+  "description": "ch03-configuration/04-resolve/mainfiles/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "build:main": "webpack --config webpack.config.main.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

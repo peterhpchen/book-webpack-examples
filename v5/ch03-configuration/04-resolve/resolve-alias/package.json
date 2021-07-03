@@ -1,0 +1,11 @@
+{
+  "description": "ch03-configuration/04-resolve/resolve-alias/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
