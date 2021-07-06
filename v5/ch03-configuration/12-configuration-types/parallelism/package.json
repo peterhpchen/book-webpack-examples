@@ -1,0 +1,13 @@
+{
+  "description": "examples/v5/ch03-configuration/12-configuration-types/parallelism/package.json",
+  "license": "MIT",
+  "scripts": {
+    "all": "webpack",
+    "prod": "webpack --config-name prod",
+    "dev": "webpack --config-name dev"
+  },
+  "devDependencies": {
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
