@@ -1,0 +1,12 @@
+{
+  "description": "ch03-configuration/13-use-node-api/node-plugins/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js",
+    "build:normal": "node build.js"
+  },
+  "devDependencies": {
+    "compression-webpack-plugin": "^8.0.1",
+    "webpack": "^5.42.1"
+  }
+}
