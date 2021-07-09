@@ -1,0 +1,19 @@
+{
+  "name": "reload-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch webpack.config.js --exec npx webpack serve"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.9",
+    "webpack": "^5.43.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
