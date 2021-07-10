@@ -1,0 +1,14 @@
+{
+  "name": "postcss-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "postcss src/style.css --dir dist --use postcss-preset-env"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
