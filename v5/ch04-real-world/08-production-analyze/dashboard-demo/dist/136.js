@@ -1,0 +1,1 @@
+(self.webpackChunkdashboard_demo=self.webpackChunkdashboard_demo||[]).push([[136],{136:(e,a,d)=>{"use strict";d.r(a),d.d(a,{default:()=>s});const s="Performance"}}]);
