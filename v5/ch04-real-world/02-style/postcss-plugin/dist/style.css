@@ -1,0 +1,12 @@
+/* ch04-real-world/02-style/postcss-plugin/src/style.css */
+/* https://www.w3.org/TR/css-variables-1/ */
+:root {
+  --demoColor: blue;
+}
+
+.demo {
+  color: blue;
+  color: var(--demoColor);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9zdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMERBQTBEO0FBQzFELDJDQUEyQztBQUMzQztFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLFdBQXVCO0VBQXZCLHVCQUF1QjtBQUN6QiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBjaDA0LXJlYWwtd29ybGQvMDMtc3R5bGUvcG9zdGNzcy1wbHVnaW4vc3JjL3N0eWxlLmNzcyAqL1xuLyogaHR0cHM6Ly93d3cudzMub3JnL1RSL2Nzcy12YXJpYWJsZXMtMS8gKi9cbjpyb290IHtcbiAgLS1kZW1vQ29sb3I6IGJsdWU7XG59XG5cbi5kZW1vIHtcbiAgY29sb3I6IHZhcigtLWRlbW9Db2xvcik7XG59XG4iXX0= */

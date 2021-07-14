@@ -1,4 +1,4 @@
-// ch04-real-world/01-development/dev-server/webpack.config.js
+// ch05-optimization/01-development/dev-server/webpack.config.js
 const path = require('path');
 
 module.exports = {

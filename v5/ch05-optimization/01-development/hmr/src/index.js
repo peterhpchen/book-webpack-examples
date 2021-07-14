@@ -1,4 +1,4 @@
-// ch04-real-world/01-development/hmr/src/index.js
+// ch05-optimization/01-development/hmr/src/index.js
 import _ from 'lodash';
 import demoName from './demoName';
 

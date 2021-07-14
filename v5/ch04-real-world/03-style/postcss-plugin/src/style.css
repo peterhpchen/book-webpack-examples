@@ -1,9 +1,0 @@
-/* ch04-real-world/03-style/postcss-plugin/src/style.css */
-/* https://www.w3.org/TR/css-variables-1/ */
-:root {
-  --demoColor: blue;
-}
-
-.demo {
-  color: var(--demoColor);
-}

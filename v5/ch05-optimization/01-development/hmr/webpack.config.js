@@ -1,4 +1,4 @@
-// ch04-real-world/01-development/hmr/webpack.config.js
+// ch05-optimization/01-development/hmr/webpack.config.js
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
