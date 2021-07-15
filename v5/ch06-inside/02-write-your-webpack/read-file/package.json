@@ -1,0 +1,7 @@
+{
+  "description": "ch06-inside/02-write-your-webpack/read-file/package.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "node bundler.js"
+  }
+}
