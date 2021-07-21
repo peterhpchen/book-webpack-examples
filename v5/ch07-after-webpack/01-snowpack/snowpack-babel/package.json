@@ -1,0 +1,21 @@
+{
+  "name": "snowpack-babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "snowpack build --watch",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@snowpack/plugin-babel": "^2.1.7",
+    "snowpack": "^3.8.2"
+  },
+  "dependencies": {
+    "core-js": "^3.15.2",
+    "lodash": "^4.17.21"
+  }
+}

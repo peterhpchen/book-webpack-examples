@@ -1,1 +1,0 @@
-export default "Webpack Demo";
