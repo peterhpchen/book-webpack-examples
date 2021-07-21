@@ -1,0 +1,16 @@
+{
+  "name": "done",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example": "webpack --config example/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
