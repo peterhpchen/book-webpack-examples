@@ -103,7 +103,7 @@
   // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
   // 入口模組 ./src/index.js
   (() => {
-    __webpack_require__.r(__webpack_exports__); // 將此模組定義為 ES2015 Module
+    __webpack_require__.r(__webpack_exports__); // 將此模組定義為 ES2015 Module
     /* harmony import */ var _message_js__WEBPACK_IMPORTED_MODULE_0__ =
       __webpack_require__(1); // 取得 Id 為 1 的模組
     // ch05-inside/01-read-bundle/simple/src/index.js
