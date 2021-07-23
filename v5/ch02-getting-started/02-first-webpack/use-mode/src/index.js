@@ -1,11 +1,11 @@
 import _ from 'lodash';
 
-import WebpackLogo from 'file-loader!./webpack-logo.png';
+import css from 'css-loader!./style.css';
 
-function logo(url) {
-  const element = new Image();
+function style(cssString) {
+  const element = document.createElement('style');
 
-  element.src = url;
+  element.innerHTML = cssString;
 
   return element;
 }
@@ -18,5 +18,5 @@ function component() {
   return element;
 }
 
-document.body.appendChild(logo(WebpackLogo));
+document.body.appendChild(style(css.toString()));
 document.body.appendChild(component());

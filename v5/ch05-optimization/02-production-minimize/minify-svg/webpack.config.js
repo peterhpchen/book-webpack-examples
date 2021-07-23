@@ -1,3 +1,4 @@
+// ch05-optimization/02-production-minimize/minify-svg/webpack.config.js
 const svgToMiniDataURI = require('mini-svg-data-uri');
 
 module.exports = [false, true].map((isCompress) => ({

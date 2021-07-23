@@ -1,3 +1,4 @@
+// ch02-getting-started/02-first-webpack/load-style/src/index.js
 import _ from 'lodash';
 
 import css from 'css-loader!./style.css';

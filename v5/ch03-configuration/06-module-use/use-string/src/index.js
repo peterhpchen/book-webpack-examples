@@ -1,11 +1,12 @@
-import WebpackLogo from "./webpack-logo.png";
+// ch03-configuration/06-module-use/use-string/src/index.js
+import css from './style.css';
 
-function logo(url) {
-  const element = new Image();
+function style(cssString) {
+  const element = document.createElement('style');
 
-  element.src = url;
+  element.innerHTML = cssString;
 
   return element;
 }
 
-document.body.appendChild(logo(WebpackLogo));
+document.head.appendChild(style(css.toString()));

@@ -1,3 +1,4 @@
+// ch05-optimization/02-production-minimize/minify-image/webpack.config.js
 module.exports = [false, true].map((isCompress) => ({
   mode: 'none',
   output: {
