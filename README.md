@@ -8,8 +8,8 @@
 
 ## 書籍連結
 
-* [天瓏書局](https://www.tenlong.com.tw/products/9789864348626)
-* [博客來](https://www.books.com.tw/products/0010901554)
+- [天瓏書局](https://www.tenlong.com.tw/products/9789864348626)
+- [博客來](https://www.books.com.tw/products/0010901554)
 
 ## v5 範例目錄
 
@@ -19,64 +19,64 @@
 
 ##### 腳本式 JavaScript 所遭遇的問題
 
-* [inline-script](v5/ch01-before-webpack/02-history-of-js-module/inline-script) ：JavaScript 內嵌於 HTML 中的 `<script>` 標籤。
-* [script-tag](v5/ch01-before-webpack/02-history-of-js-module/script-tag) ：使用 `<script>` 的 `src` 屬性引入外部 JavaScript 。
-* [scope](v5/ch01-before-webpack/02-history-of-js-module/scope) ：在內嵌的 `<script>` 中使用外部 JavaScript 定義的變數。
-* [var-conflict](v5/ch01-before-webpack/02-history-of-js-module/var-conflict) ：演示在全域中定義的變數互相覆蓋的問題。
-* [iife](v5/ch01-before-webpack/v5/ch01-before-webpack/02-history-of-js-module/iife) ：演示使用 IIFE 處理內部變數衝突。
-* [implicit-import](v5/ch01-before-webpack/02-history-of-js-module/implicit-import) ：演示在使用隱性引入時所潛藏的引用錯誤問題。
-* [import-order](v5/ch01-before-webpack/02-history-of-js-module/import-order) ：演示 `<script>` 順序錯置所產生的問題。
+- [inline-script](v5/ch01-before-webpack/02-history-of-js-module/inline-script) ： JavaScript 內嵌於 HTML 中的 `<script>` 標籤。
+- [script-tag](v5/ch01-before-webpack/02-history-of-js-module/script-tag) ：使用 `<script>` 的 `src` 屬性引入外部 JavaScript 。
+- [scope](v5/ch01-before-webpack/02-history-of-js-module/scope) ：在內嵌的 `<script>` 中使用外部 JavaScript 定義的變數，展示 JavaScript 腳本式引入方法的全域特性。
+- [var-conflict](v5/ch01-before-webpack/02-history-of-js-module/var-conflict) ：演示在全域中定義的變數互相覆蓋的問題。
+- [iife](v5/ch01-before-webpack/v5/ch01-before-webpack/02-history-of-js-module/iife) ：演示使用 IIFE 處理內部變數衝突。
+- [implicit-import](v5/ch01-before-webpack/02-history-of-js-module/implicit-import) ：演示在使用隱性引入時所潛藏的引用錯誤問題。
+- [import-order](v5/ch01-before-webpack/02-history-of-js-module/import-order) ：演示 `<script>` 順序錯置所產生的問題。
 
 ##### JavaScript 的模組系統
 
-* [common-js](v5/ch01-before-webpack/02-history-of-js-module/common-js) ：演示使用 CommonJS 的導出與導入模組。
-* [require-js](v5/ch01-before-webpack/02-history-of-js-module/require-js) ：演示使用 RequireJS 的導出與導入模組。
-* [es-module](v5/ch01-before-webpack/02-history-of-js-module/es-module) ：演示使用 ES Module 的導出與導入模組。
+- [common-js](v5/ch01-before-webpack/02-history-of-js-module/common-js) ：演示使用 CommonJS 的導出與導入模組。
+- [require-js](v5/ch01-before-webpack/02-history-of-js-module/require-js) ：演示使用 RequireJS 的導出與導入模組。
+- [es-module](v5/ch01-before-webpack/02-history-of-js-module/es-module) ：演示使用 ES Module 的導出與導入模組。
 
 #### [第三節：新技術的崛起](v5/ch01-before-webpack/03-new-tech)
 
 ##### 各環境語言支援度不一
 
-* [babel](v5/ch01-before-webpack/03-new-tech/babel) ：演示使用 Babel 將新的 JavaScript 語法轉為舊語法。
-* [postcss](v5/ch01-before-webpack/03-new-tech/postcss) ：演示使用 PostCSS 將新的 CSS 語法轉為舊語法。
+- [babel](v5/ch01-before-webpack/03-new-tech/babel) ：演示使用 Babel 將新的 JavaScript 語法轉為舊語法。
+- [postcss](v5/ch01-before-webpack/03-new-tech/postcss) ：演示使用 PostCSS 將新的 CSS 語法轉為舊語法。
 
 ##### JavaScript 的弱型別特性
 
-* [type-script](v5/ch01-before-webpack/03-new-tech/type-script) ：演示使用 TypeScript 為程式帶來型別檢查。
+- [type-script](v5/ch01-before-webpack/03-new-tech/type-script) ：演示使用 TypeScript 為程式帶來型別檢查。
 
 ##### CSS 缺乏程式語言機制
 
-* [sass-example](v5/ch01-before-webpack/03-new-tech/sass-example) ：演示使用 SASS 語法經由轉譯後變為一般的 CSS 語法。
+- [sass-example](v5/ch01-before-webpack/03-new-tech/sass-example) ：演示使用 SASS 語法經由轉譯後變為一般的 CSS 語法。
 
 ##### CSS 是靜態的
 
-* [emotion](v5/ch01-before-webpack/03-new-tech/emotion) ：演示使用 Emotion 在 JavaScript 中撰寫 CSS 樣式。
+- [emotion](v5/ch01-before-webpack/03-new-tech/emotion) ：演示使用 Emotion 在 JavaScript 中撰寫 CSS 樣式。
 
 ##### HTML 是靜態的
 
-* [pug](v5/ch01-before-webpack/03-new-tech/pug) ：演示使用 Pug 作為 HTML 的模板引擎。
-* [vue-template-syntax](v5/ch01-before-webpack/03-new-tech/vue-template-syntax) ：演示使用 Vue.js 的模板語法撰寫 HTML 。
-* [react-jsx](v5/ch01-before-webpack/03-new-tech/react-jsx) ：演示在 JavaScript 內使用 JSX 配置 HTML 的生成。
+- [pug](v5/ch01-before-webpack/03-new-tech/pug) ：演示使用 Pug 作為 HTML 的模板引擎。
+- [vue-template-syntax](v5/ch01-before-webpack/03-new-tech/vue-template-syntax) ：演示使用 Vue.js 的模板語法撰寫 HTML 。
+- [react-jsx](v5/ch01-before-webpack/03-new-tech/react-jsx) ：演示在 JavaScript 內使用 JSX 配置 HTML 的生成。
 
 #### [第四節：提升網頁效能](v5/ch01-before-webpack/04-performance)
 
 ##### 生產環境
 
-* [min](v5/ch01-before-webpack/04-performance/min) ：使用壓縮後的 `.min.js` 程式碼，減少請求的負擔。
-* [redundant-import](v5/ch01-before-webpack/04-performance/redundant-import) ：演示多餘的載入會增加請求的時間。
-* [partial-use](v5/ch01-before-webpack/04-performance/partial-use) ：演示只載入欲使用的程式碼可以減少請求的時間。
-* [multiple-import](v5/ch01-before-webpack/04-performance/multiple-import) ：演示多次載入會損耗請求的效率。
-* [single-page](v5/ch01-before-webpack/04-performance/single-page) ：演示單頁應用可能載入不必要的資源。
-* [single-page-async](v5/ch01-before-webpack/04-performance/single-page-async) ：演示當要使用資源時，再以延遲載入的方式請求資源，以此減少無用的請求。
+- [min](v5/ch01-before-webpack/04-performance/min) ：使用壓縮後的 `.min.js` 程式碼，減少請求的負擔。
+- [redundant-import](v5/ch01-before-webpack/04-performance/redundant-import) ：演示多餘的載入會增加請求的時間。
+- [partial-use](v5/ch01-before-webpack/04-performance/partial-use) ：演示只載入欲使用的程式碼可以減少請求的時間。
+- [multiple-import](v5/ch01-before-webpack/04-performance/multiple-import) ：演示多次載入會損耗請求的效率。
+- [single-page](v5/ch01-before-webpack/04-performance/single-page) ：演示單頁應用可能載入不必要的資源。
+- [single-page-async](v5/ch01-before-webpack/04-performance/single-page-async) ：演示當要使用資源時，再以延遲載入的方式請求資源，以此減少無用的請求。
 
 #### [第五節：各類工具的出現](v5/ch01-before-webpack/05-tools)
 
 ##### 工具的互相配合
 
-* [npm-scripts](v5/ch01-before-webpack/05-tools/npm-scripts) ：演示使用 npm 的 `package.json` 中的 `scripts` 屬性配置建置／執行流程。
-* [gulp-example](v5/ch01-before-webpack/05-tools/gulp-example) ：演示使用 Gulp 建立建置／執行流程。
-* [browserify](v5/ch01-before-webpack/05-tools/browserify) ：演示使用 Browserify 轉換 JavaScript 的 CommonJS 模組變為可執行於瀏覽器的原生語法。
-* [gulp-browserify](v5/ch01-before-webpack/05-tools/gulp-browserify) ：演示 Gulp 與 Browserify 搭配的使用方式，將 Gulp 作為任務執行器， Browserify 作為模組綑綁器。
+- [npm-scripts](v5/ch01-before-webpack/05-tools/npm-scripts) ：演示使用 npm 的 `package.json` 中的 `scripts` 屬性配置建置／執行流程。
+- [gulp-example](v5/ch01-before-webpack/05-tools/gulp-example) ：演示使用 Gulp 建立建置／執行流程。
+- [browserify](v5/ch01-before-webpack/05-tools/browserify) ：演示使用 Browserify 轉換 JavaScript 的 CommonJS 模組變為可執行於瀏覽器的原生語法。
+- [gulp-browserify](v5/ch01-before-webpack/05-tools/gulp-browserify) ：演示 Gulp 與 Browserify 搭配的使用方式，將 Gulp 作為任務執行器， Browserify 作為模組綑綁器。
 
 ### [第二章：認識 webpack](v5/ch02-getting-started)
 
