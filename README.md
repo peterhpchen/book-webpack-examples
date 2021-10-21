@@ -15,6 +15,10 @@
 
 - 頁數 _2-25_ 「使用 DevServer 」小節範例代碼對應遺漏，應為 [`ch02-getting-started/02-first-webpack/dev-server`](v5/ch02-getting-started/02-first-webpack/dev-server) 。
 - 頁數 _3-3_ 「使用配置物件」小節的第一個程式碼區塊應與最後一行 `npx webpack --config webpack.config.demo.js` 分為兩個區塊。
+- 頁數 _3-70_ 最上方的程式碼區塊在 `// ch03-configuration/06-module-use/use-func/src/hello.js` 之前與之後應該分為兩個區塊。
+- 頁數 _3-83_ 「配置 Plugins 的正確姿勢」小節中的 awesome webpack 連結應為 `https://webpack.js.org/awesome-webpack/#webpack-plugins` 。
+- 頁數 _3-136_ 「 optimization.usedExports 」小節的最後應該要加上「可以參考範例 `ch03-configuration/11-optimization/used-exports` 」。
+- 頁數 _4-15_ 最上方的 `post-loader` 應改為 `postcss-loader` 。
 
 ## 範例目錄
 
@@ -120,7 +124,7 @@
 
 #### [第二節：入口 Entry](v5/ch03-configuration/02-entry)
 
-- [entry-default](v5/ch03-configuration/02-entry/entry-default) ： 預設的 `entry` 配置。
+- [entry-default](v5/ch03-configuration/02-entry/entry-default) ： 預設的 `entry` 配置。
 - [entry-string](v5/ch03-configuration/02-entry/entry-string) ：使用字串設置 `entry` 。
 - [entry-array](v5/ch03-configuration/02-entry/entry-array) ：使用陣列設置多個入口。
 - [entry-object](v5/ch03-configuration/02-entry/entry-object) ：使用物件以指定的 `key` 值設定不同的入口，並以 `key` 為區別輸出複數個 bundle 。
@@ -145,7 +149,7 @@
 - [output-filename](v5/ch03-configuration/03-output/output-filename) ：使用 `output` 的 `filename` 設定輸出的 bundle 名稱。
 - [output-filename-multi](v5/ch03-configuration/03-output/output-filename-multi) ：使用 template string 設定多個輸出時的 bundle 名稱。
 - [output-filename-func](v5/ch03-configuration/03-output/output-filename-func) ：使用函式決定輸出的 bundle 名稱。
-- [output-filename-template](v5/ch03-configuration/03-output/output-filename-template) ： 以不同的 template string 展示輸出的 bundle 名稱。
+- [output-filename-template](v5/ch03-configuration/03-output/output-filename-template) ： 以不同的 template string 展示輸出的 bundle 名稱。
 - [output-filename-hash](v5/ch03-configuration/03-output/output-filename-hash) ：比較不同的 hash template string 所輸出的值。
 - [output-publicpath](v5/ch03-configuration/03-output/output-publicpath) ：以 `publicPath` 設定伺服器中請求的位置。
 - [output-chunkfilename](v5/ch03-configuration/03-output/output-chunkfilename) ：以 `chunkFilename` 設定 **non-initial** 的名稱。
@@ -176,25 +180,89 @@
 
 #### [第六節：模組 Module 的處理](v5/ch03-configuration/06-module-use)
 
+- [use-string](v5/ch03-configuration/06-module-use/use-string) ：使用字串設定 loader 的來源。
+- [use-obj](v5/ch03-configuration/06-module-use/use-obj) ：使用物件設定 loader 的來源與設定參數。
+- [use-func](v5/ch03-configuration/06-module-use/use-func) ：使用函式設定 loader 。
+- [use-array](v5/ch03-configuration/06-module-use/use-array) ：使用陣列設定多個 loader 。
+- [use-short](v5/ch03-configuration/06-module-use/use-short) ：使用簡寫減少 `use` 一層的 loader 設定。
+- [loader-order](v5/ch03-configuration/06-module-use/loader-order) ：使用 `enforce` 改變預設 loader 的載入順序。
+- [no-parse](v5/ch03-configuration/06-module-use/no-parse) ：使用 `noParse` 屬性避免解析特定模組。
+- [parser](v5/ch03-configuration/06-module-use/parser) ：使用 `parser` 決定特定模組語意如何設定。
+- [use-loader-options](v5/ch03-configuration/06-module-use/use-loader-options) ：（未收入）演示使用 `options` 設定 loader 。
+
 #### [第七節：插件 Plugins](v5/ch03-configuration/07-plugins)
+
+- [plugin-copy](v5/ch03-configuration/07-plugins/plugin-copy) ：演示使用 `CopyPlugin` 複製檔案至目標目錄中。
+- [plugin-css](v5/ch03-configuration/07-plugins/plugin-css) ：演示在 loader 中設定 `MiniCssExtractPlugin` 所提供的 loader 。
+- [plugin-css-minimizer](v5/ch03-configuration/07-plugins/plugin-css-minimizer) ：演示在 `optimization` 中使用 `CssMinimizerPlugin` 作為 minimizer 。
 
 #### [第八節：監聽 Watch](v5/ch03-configuration/08-watch)
 
+- [simple-watch](v5/ch03-configuration/08-watch/simple-watch) ：設定 `watch` 屬性，開啟監控功能。
+- [watch-options](v5/ch03-configuration/08-watch/watch-options) ：演示各個監控功能屬性的效果。
+- [dev-server](v5/ch03-configuration/08-watch/dev-server) ：演示使用 DevServer 預設開啟監控模式。
+
 #### [第九節： Source Map](v5/ch03-configuration/09-source-map)
+
+- [without-source-map](v5/ch03-configuration/09-source-map/without-source-map) ：演示在開發時，沒有 source map 的困難。
+- [source-map](v5/ch03-configuration/09-source-map/source-map) ：演示使用 source map 解決開發時程式碼對應至原始碼的問題。
+- [babel-source-map](v5/ch03-configuration/09-source-map/babel-source-map) ：以 Babel 說明 source map 的原理。
+- [simple-source-map](v5/ch03-configuration/09-source-map/simple-source-map) ：（未收入）操作 webpack 建置帶有 source map 的 bundle 。
 
 #### [第十節： Dev Tool](v5/ch03-configuration/10-devtool)
 
+- [devtool](v5/ch03-configuration/10-devtool/devtool) ：演示不同的 `devtool` 效果。
+
 #### [第十一節：最佳化 Optimization 與模式 Mode](v5/ch03-configuration/11-optimization)
+
+- [module-ids](v5/ch03-configuration/11-optimization/module-ids) ：演示使用 `moduleIds` 屬性修改 webpack 中生成 module id 的方式。
+- [chunk-ids](v5/ch03-configuration/11-optimization/chunk-ids) ：演示使用 `chunkIds` 屬性修改 webpack 中 chunk 的 id 生成方式。
+- [node-env](v5/ch03-configuration/11-optimization/node-env) ：使用 `node-env` 修改環境變數。
+- [flag-included-chunks](v5/ch03-configuration/11-optimization/flag-included-chunks) ：使用 `flagIncludeChunks` 來決定是否要分出各個 chunk 資源。
+- [side-effects](v5/ch03-configuration/11-optimization/side-effects) ：對非全域的模組刪減未引入的變數。
+- [used-exports](v5/ch03-configuration/11-optimization/used-exports) ： 避免未引入的模組引入。
+- [concatenate-modules](v5/ch03-configuration/11-optimization/concatenate-modules) ：使用 `concatenateModules` 將模組合併。
+- [minimize](v5/ch03-configuration/11-optimization/minimize) ：使用 `minimize` 將輸出 bundle 壓縮。
 
 #### [第十二節：配置檔的種類](v5/ch03-configuration/12-configuration-types)
 
+- [cli-file](v5/ch03-configuration/12-configuration-types/cli-file) ：使用導出配置物件的檔案作為配置檔。
+- [export-function](v5/ch03-configuration/12-configuration-types/export-function) ：使用導出函式的檔案作為配置檔。
+- [export-promise](v5/ch03-configuration/12-configuration-types/export-promise) ：使用 Promise 導出，非同步取得配置的內容。
+- [export-array](v5/ch03-configuration/12-configuration-types/export-array) ：使用陣列導出多個配置，並同時執行多種建置。
+- [parallelism](v5/ch03-configuration/12-configuration-types/parallelism) ：藉由導出 `parallelism` 來控制同步建置的數量。
+
 #### [第十三節：使用 Node.js API 操作 webpack](v5/ch03-configuration/13-use-node-api)
+
+- [node-interface](v5/ch03-configuration/13-use-node-api/node-interface) ：使用 Node.js API 叫用 webpack 執行建置。
+- [node-interface-callback](v5/ch03-configuration/13-use-node-api/node-interface-callback) ：使用 Node.js API 中的 Callback 函式取得建置資訊並輸出。
+- [node-interface-run](v5/ch03-configuration/13-use-node-api/node-interface-run) ：叫用 `run` 執行建置。
+- [node-interface-watch](v5/ch03-configuration/13-use-node-api/node-interface-watch) ：使用 `watch` 啟動監控模式並執行建置。
+- [node-interface-multiple](v5/ch03-configuration/13-use-node-api/node-interface-multiple) ：使用陣列格式的配置執行複數個建置。
+- [node-plugins](v5/ch03-configuration/13-use-node-api/node-plugins) ：使用 `apply` 為 `compiler` 注入 plugin 。
+- [node-interface-error-handling](v5/ch03-configuration/13-use-node-api/node-interface-error-handling) ：演示 Node.js API 錯誤訊息的處理。
 
 ### [第四章：真實世界的 webpack](v5/ch04-real-world)
 
 #### [第一節：使用 JavaScript](v5/ch04-real-world/01-javascript)
 
+- [babel-plugin](v5/ch04-real-world/01-javascript/babel-plugin) ：使用 CLI 載入 Babel plugin 來轉換程式碼。
+- [babel-config](v5/ch04-real-world/01-javascript/babel-config) ：使用配置檔載入 Babel plugin 來轉換程式碼。
+- [babel-preset](v5/ch04-real-world/01-javascript/babel-preset) ：使用 Babel preset 替換複數個 plugin 。
+- [babel-browserslist](v5/ch04-real-world/01-javascript/babel-browserslist) ：使用 Babel 與 Browserslist 配置目標環境。
+- [babel-polyfill](v5/ch04-real-world/01-javascript/babel-polyfill) ：使用 Babel polyfill 對新的語意做轉換。
+- [babel-webpack](v5/ch04-real-world/01-javascript/babel-webpack) ：使用 webpack 配置 Babel 做建置。
+
 #### [第二節：使用 Style](v5/ch04-real-world/02-style)
+
+- [postcss-cli-example](v5/ch04-real-world/02-style/postcss-cli-example) ：使用 PostCSS 的 CLI 配置轉換 CSS 程式碼。
+- [postcss-plugin](v5/ch04-real-world/02-style/postcss-plugin) ：添加 PostCSS plugin 執行特定的轉換。
+- [postcss-config](v5/ch04-real-world/02-style/postcss-config) ：使用配置檔配置 PostCSS 的轉換方式。
+- [postcss-browserslist](v5/ch04-real-world/02-style/postcss-browserslist) ：使用 PostCSS 與 Browserslist 配置目標環境。
+- [postcss-webpack-loader](v5/ch04-real-world/02-style/postcss-webpack-loader) ：在 webpack 中使用 `postcss-loader` 處理 CSS 。
+- [postcss-css-loader](v5/ch04-real-world/02-style/postcss-css-loader) ：在 webpack 中配置 `css-loader` 讀取 CSS 。
+- [postcss-style-loader](v5/ch04-real-world/02-style/postcss-style-loader) ：在 webpack 中配置 `style-loader` 載入 CSS 至頁面。
+- [extract-css](v5/ch04-real-world/02-style/extract-css) ：使用 `mini-css-extract-plugin` 拆分 CSS 為獨立檔案。
 
 #### [第三節：使用 Image](v5/ch04-real-world/03-image)
 
