@@ -1,15 +1,15 @@
+<img src="assets/MP22161.jpeg" width="280" title="Cover Image" align="right">
+
 # 書籍「從 0 到 Webpack 」範例集
 
 此庫為「**從 0 到 Webpack** 」一書的範例集。
 
-![cover](assets/MP22161.jpeg)
-
-「**從 0 到 Webpack** 」是本介紹 webpack 的專書。
-
-## 書籍連結
+本書可以在下面的連結中找到：
 
 - [天瓏書局](https://www.tenlong.com.tw/products/9789864348626)
 - [博客來](https://www.books.com.tw/products/0010901554)
+
+「**從 0 到 Webpack** 」是本介紹 webpack 的專書。
 
 ## 補漏
 
