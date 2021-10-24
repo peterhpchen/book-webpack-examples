@@ -13,12 +13,16 @@
 
 ## 補漏
 
-- 頁數 _2-25_ 「使用 DevServer 」小節範例代碼對應遺漏，應為 [`ch02-getting-started/02-first-webpack/dev-server`](v5/ch02-getting-started/02-first-webpack/dev-server) 。
+- 頁數 _2-25_ 「使用 DevServer 」小節的最後應該要加上「可以參考範例 `ch02-getting-started/02-first-webpack/dev-server` 」。
 - 頁數 _3-3_ 「使用配置物件」小節的第一個程式碼區塊應與最後一行 `npx webpack --config webpack.config.demo.js` 分為兩個區塊。
 - 頁數 _3-70_ 最上方的程式碼區塊在 `// ch03-configuration/06-module-use/use-func/src/hello.js` 之前與之後應該分為兩個區塊。
 - 頁數 _3-83_ 「配置 Plugins 的正確姿勢」小節中的 awesome webpack 連結應為 `https://webpack.js.org/awesome-webpack/#webpack-plugins` 。
 - 頁數 _3-136_ 「 optimization.usedExports 」小節的最後應該要加上「可以參考範例 `ch03-configuration/11-optimization/used-exports` 」。
 - 頁數 _4-15_ 最上方的 `post-loader` 應改為 `postcss-loader` 。
+- 頁數 _5-6_ 「配置改變時自動建置」小節的最後應該要加上「可以參考範例 `ch05-optimization/01-development/reload-config` 」。
+- 頁數 _5-41_ 「輸出資訊」小節段落「從而針對問題做解決」下面應要加上「可以參考範例 `ch05-optimization/05-production-analyze/cli-args` 」。
+- 頁數 _5-42_ 「輸出資訊」小節的最後應該要加上「可以參考範例 `ch05-optimization/05-production-analyze/cli-args-json` 」。
+- 頁數 _5-44_ 「警示 bundle 過大」小節的最後應該要加上「可以參考範例 `ch05-optimization/05-production-analyze/bundlesize-demo` 」。
 
 ## 範例目錄
 
@@ -266,32 +270,108 @@
 
 #### [第三節：使用 Image](v5/ch04-real-world/03-image)
 
+- [load-image-by-path](v5/ch04-real-world/03-image/load-image-by-path) ：將圖片以原本靜態檔案的方式載入。
+- [load-image-by-url](v5/ch04-real-world/03-image/load-image-by-url) ：將圖片轉為 Data URL 載入。
+- [load-image-by-auto](v5/ch04-real-world/03-image/load-image-by-auto) ：將圖片依照大小切換靜態檔案與 Data URL 的方式載入。
+- [load-image-by-auto-max-size](v5/ch04-real-world/03-image/load-image-by-auto-max-size) ：修改切換載入方式的圖片大小。
+- [load-svg](v5/ch04-real-world/03-image/load-svg) ：將 SVG 圖片以 HTML tag 的格式籤入頁面。
+
 #### [第四節：配置多模式專案](v5/ch04-real-world/04-config-setup)
 
+- [function](v5/ch04-real-world/04-config-setup/function) ：使用函式設定配置檔。
+- [merge](v5/ch04-real-world/04-config-setup/merge) ：使用 `webpack-merge` 設定配置檔。
+- [chain](v5/ch04-real-world/04-config-setup/chain) ：使用 `webpack-chain` 設定配置檔。
+
 #### [第五節： Module Federation](v5/ch04-real-world/05-module-federation)
+
+- [host-and-remote](v5/ch04-real-world/05-module-federation/host-and-remote) ：演示 Module Federation 。
 
 ### [第五章：使用 webpack 優化環境體驗](v5/ch05-optimization)
 
 #### [第一節：建立 webpack 開發環境](v5/ch05-optimization/01-development)
 
+- [development-mode](v5/ch05-optimization/01-development/development-mode) ：使用 development 作為開發時的模式。
+- [source-map](v5/ch05-optimization/01-development/source-map) ：使用 source map 解決開發時程式碼對應問題。
+- [dev-server](v5/ch05-optimization/01-development/dev-server) ：使用 DevServer 作為開發伺服器。
+- [auto-create-html](v5/ch05-optimization/01-development/auto-create-html) ：使用 `html-webpack-plugin` 產生 `index.html` 。
+- [reload-config](v5/ch05-optimization/01-development/reload-config) ：修改配置後自動重新建置。
+- [hmr](v5/ch05-optimization/01-development/hmr) ：手動設定 Hot Module Replacement 。
+
 #### [第二節：建立 webpack 生產環境 - 減小體積](v5/ch05-optimization/02-production-minimize)
+
+- [production-mode](v5/ch05-optimization/02-production-minimize/production-mode) ：使用 production 作為生產環境的建置模式。
+- [optimization-minimize](v5/ch05-optimization/02-production-minimize/optimization-minimize) ：使用 `optimization` 啟用最小化 bundle 體積的功能。
+- [optimization-node-env](v5/ch05-optimization/02-production-minimize/optimization-node-env) ：使用環境變數決定執行的程式碼。
+- [css-minimize](v5/ch05-optimization/02-production-minimize/css-minimize) ：壓縮 CSS 的體積。
+- [extract-css-minimize](v5/ch05-optimization/02-production-minimize/extract-css-minimize) ：壓縮獨立抽出的 CSS 體積。
+- [minify-image](v5/ch05-optimization/02-production-minimize/minify-image) ：壓縮圖片的體積。
+- [minify-svg](v5/ch05-optimization/02-production-minimize/minify-svg) ：壓縮 SVG 的體積。
 
 #### [第三節：建立 webpack 生產環境 - 切割代碼](v5/ch05-optimization/03-production-code-splitting)
 
+- [entry](v5/ch05-optimization/03-production-code-splitting/entry) ：使用 `entry` 的物件設定，切割為複數個 bundle 。
+- [import](v5/ch05-optimization/03-production-code-splitting/import) ：使用 `import()` 動態引入模組，藉以切割 bundle 。
+- [split-chunks](v5/ch05-optimization/03-production-code-splitting/split-chunks) ：使用 `optimization` 的 `splitChunks` 屬性手動切割 bundle 。
+
 #### [第四節：建立 webpack 生產環境 - 快取](v5/ch05-optimization/04-production-caching)
 
+- [caching](v5/ch05-optimization/04-production-caching/caching) ：演示瀏覽器快取的功能。
+- [update-caching](v5/ch05-optimization/04-production-caching/update-caching) ：使用 `[fullhash]` template string 定義 bundle 檔名，在更新程式碼後可以產生不同檔名，促使瀏覽器重新抓取資源。
+- [dependency](v5/ch05-optimization/04-production-caching/dependency) ：演示修改單一模組程式碼後，連其他的模組也因為 `[fullhash]` 的修改成需要重新載入。
+- [extract-dependency](v5/ch05-optimization/04-production-caching/extract-dependency) ：獨立各個 Chunk ，使未修改的模組可以繼續使用快取。
+- [extract-runtime](v5/ch05-optimization/04-production-caching/extract-runtime) ：獨立輸出 runtime 的 bundle ，藉此延長快取的時間。
+- [inline-runtime](v5/ch05-optimization/04-production-caching/inline-runtime) ： runtime 程式碼較少，可以直接嵌入 `index.html` 中。
+- [stable-module-id](v5/ch05-optimization/04-production-caching/stable-module-id) ：設定固定的 module id 避免其破壞快取。
+
 #### [第五節：建立 webpack 生產環境 - 追蹤建置](v5/ch05-optimization/05-production-analyze)
+
+- [performance](v5/ch05-optimization/05-production-analyze/performance) ：使用 `performance` 屬性設定輸出 bundle 狀態。
+- [cli-args](v5/ch05-optimization/05-production-analyze/cli-args) ：使用 CLI 參數 `progress` 輸出建置細節。
+- [cli-args-json](v5/ch05-optimization/05-production-analyze/cli-args-json) ：使用 CLI 參數 `json` 導出建置細節。
+- [dashboard-demo](v5/ch05-optimization/05-production-analyze/dashboard-demo) ：使用 `webpack-dashboard` 監控 bundle 狀態。
+- [bundlesize-demo](v5/ch05-optimization/05-production-analyze/bundlesize-demo) ：使用 `bundlesize` 警示 bundle 體積過大。
 
 ### [第六章：解構 webpack](v5/ch06-inside)
 
 #### [第一節： Bundle 導讀](v5/ch06-inside/01-read-bundle)
 
+- []() ：
+
 #### [第二節：自己動手寫 webpack](v5/ch06-inside/02-write-your-webpack)
+
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
 
 #### [第三節： Loader 的內部構造](v5/ch06-inside/03-inside-loader)
 
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+- []() ：
+
 #### [第四節： Plugin 的內部構造](v5/ch06-inside/04-inside-plugin)
+
+- []() ：
+- []() ：
+- []() ：
 
 ### [第七章：寫在 webpack 之後](v5/ch07-after-webpack)
 
 #### [第一節：使用 Snowpack 以原生模組系統建置專案](v5/ch07-after-webpack/01-snowpack)
+
+- []() ：
