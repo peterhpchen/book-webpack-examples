@@ -14,4 +14,4 @@
 </html>
 ```
 
-使用 `<script>`  標籤嵌入 JavaScript 區塊。
+使用 `<script>` 標籤嵌入 JavaScript 區塊。
