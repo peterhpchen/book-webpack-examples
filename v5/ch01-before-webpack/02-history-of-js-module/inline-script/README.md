@@ -1,23 +1,17 @@
 # inline-script
 
-## 目的
+## index.html
 
-JavaScript 內嵌於 HTML 中的 `<script>` 標籤。
-
-## 實作
-
-在 `index.html` 中使用 `<script>` 叫用 JavaScript 的 `Console.log()` 。
-
-## 執行
-
-使用 Server 開啟 `index.html` 。
-
-以 [`http-server`](https://www.npmjs.com/package/http-server) 作為 Server 為例：
-
-```bash
-http-server
+```html
+<!-- ch01-before-webpack/02-history-of-js-module/inline-script/index.html -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      console.log('Hello, world!');
+    </script>
+  </body>
+</html>
 ```
 
-## 結果
-
-在瀏覽器上開啟 Server 的網址，並開啟 Developer Tools ，在 Console 中可以看到 `Hello, world!` 。
+使用 `<script>`  標籤嵌入 JavaScript 區塊。

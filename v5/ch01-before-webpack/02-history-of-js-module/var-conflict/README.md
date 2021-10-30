@@ -1,29 +1,38 @@
 # var-conflict
 
-## 目的
+## index.js
 
-演示在全域中定義的變數互相覆蓋的問題。
+```js
+// ch01-before-webpack/02-history-of-js-module/var-conflict/index.js
+var outputStr = 'Hello, world!';
 
-## 實作
-
-在 `index.js` 中設定 `outputStr` 變數與 `output()` 函式。在 `index.html` 中引入 `index.js` ，並在 `<script>` 中定義與 `index.js` 的變數同名的 `outputStr` ，在這定義前後分別叫用一次 `output()` ，兩次叫用所輸出的字串會不同。
-
-## 執行
-
-使用 Server 開啟 `index.html` 。
-
-以 [`http-server`](https://www.npmjs.com/package/http-server) 作為 Server 為例：
-
-```bash
-http-server
+function output() {
+  console.log(outputStr);
+}
 ```
 
-## 結果
+設置變數 `outputStr` 與函式 `output()` 。
 
-在瀏覽器上開啟 Server 的網址，並開啟 Developer Tools ，在 Console 中可以看到：
+## index.html
 
-```bash
-Hello, world!
-World, hello!
-World, hello!
+```html
+<!-- ch01-before-webpack/02-history-of-js-module/var-conflict/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <script>
+      output(); // 'Hello, world!'
+      var outputStr = 'World, hello!';
+      console.log(outputStr); // 'World, hello!'
+      output(); // 'World, hello!'
+    </script>
+  </body>
+</html>
 ```
+
+在引入 `index.js` 後，於 `<script>` 內兩次叫用 `output()` 函式，分別在定義 local 的 `outputStr` 之前與之後。
+
+`outputStr` 的第一次叫用還維持 `index.js` 內部所定義的輸出 `Hello, world!` ，到了第二次叫用時，因為 local 定義了自己的 `outputStr` ，使得原本的值被覆蓋，因而輸出 `World, hello!` 。

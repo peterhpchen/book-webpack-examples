@@ -1,26 +1,25 @@
 # common-js
 
-## 目的
+## add.js
 
-演示使用 CommonJS 的導出與導入模組。
+```js
+// ch01-before-webpack/02-history-of-js-module/common-js/add.js
+function add(a, b) {
+  return a + b;
+}
 
-## 實作
-
-使用 CommonJS 導出 `add.js` 中的 `add` 函式，並在 `index.js` 中導入 `add` 函式並叫用。
-
-## 執行
-
-使用 Node.js 執行 `index.js` 。
-
-```bash
-node index.js
+module.exports = add;
 ```
 
-## 結果
+使用 `module.exports` 輸出 `add()` 函式。
 
-在終端中輸出 `3` 。
+## index.js
 
-```bash
-> node index.js
-3
+```js
+// ch01-before-webpack/02-history-of-js-module/common-js/index.js
+const add = require('./add');
+
+console.log(add(1, 2)); // 3
 ```
+
+使用 `require()` 函式引入 `add.js` 模組，並使用。

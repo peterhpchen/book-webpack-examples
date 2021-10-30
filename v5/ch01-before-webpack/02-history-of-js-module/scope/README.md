@@ -1,23 +1,29 @@
 # scope
 
-## 目的
+## index.js
 
-在內嵌的 `<script>` 中使用外部 JavaScript 定義的變數，展示 JavaScript 腳本式引入方法的全域特性。
-
-## 實作
-
-在 `index.html` 中的 `<script>` 中使用 `index.js` 中所定義的 `outputStr` 變數。
-
-## 執行
-
-使用 Server 開啟 `index.html` 。
-
-以 [`http-server`](https://www.npmjs.com/package/http-server) 作為 Server 為例：
-
-```bash
-http-server
+```js
+// ch01-before-webpack/02-history-of-js-module/scope/index.js
+var outputStr = 'Hello, world!';
 ```
 
-## 結果
+設定變數 `outputStr` 。
 
-在瀏覽器上開啟 Server 的網址，並開啟 Developer Tools ，在 Console 中可以看到 `Hello, world!` 。
+## index.html
+
+```html
+<!-- ch01-before-webpack/02-history-of-js-module/scope/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <script>
+      console.log(outputStr);
+    </script>
+  </body>
+</html>
+```
+
+使用 `<script>` 的 `src` 引入外部 JavaScript 檔案 `index.js` ，並在內嵌的 `<script>` 中使用 `index.js` 定義的變數 `outputStr` ，展示 JavaScript 腳本式引入方法的全域特性。

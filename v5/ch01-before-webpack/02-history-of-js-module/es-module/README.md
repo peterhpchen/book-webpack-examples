@@ -1,23 +1,39 @@
 # es-module
 
-## 目的
+## add.js
 
-演示使用 ES Module 的導出與導入模組。
-
-## 實作
-
-使用 ES Module 導出 `add.js` 中的 `add` 函式，並在 `index.js` 中導入 `add` 函式並叫用。
-
-## 執行
-
-使用 Server 開啟 `index.html` 。
-
-以 [`http-server`](https://www.npmjs.com/package/http-server) 作為 Server 為例：
-
-```bash
-http-server
+```js
+// ch01-before-webpack/02-history-of-js-module/es-module/add.js
+export default function (a, b) {
+  return a + b;
+}
 ```
 
-## 結果
+使用 `export default` 導出預設模組。
 
-在瀏覽器上開啟 Server 的網址，並開啟 Developer Tools ，在 Console 中可以看到 `3` 。
+## index.js
+
+```js
+// ch01-before-webpack/02-history-of-js-module/es-module/index.js
+import add from './add.js';
+
+console.log(add(1, 2)); // 3
+```
+
+使用 `import` 導入模組。
+
+## index.html
+
+```html
+<!-- ch01-before-webpack/02-history-of-js-module/es-module/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="index.js" type="module"></script>
+    <script src="add.js" type="module"></script>
+  </head>
+  <body></body>
+</html>
+```
+
+使用 `type` 設定為 `module` 的 `<script>` 引用 `index.js` 與 `add.js` 。

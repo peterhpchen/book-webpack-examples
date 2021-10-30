@@ -1,23 +1,25 @@
 # import-order
 
-## 目的
+## index.html
 
-演示 `<script>` 順序錯置所產生的問題。
-
-## 實作
-
-在 `index.html` 中將 `lodash` 的引入時機調整至晚於使用 `_.join()` 的時間點，`_.join()` 會因尚未引入 `lodash` 而拋錯，並且使用其的 `outputStr` 變數也會變為 `undefined` 。
-
-## 執行
-
-使用 Server 開啟 `index.html` 。
-
-以 [`http-server`](https://www.npmjs.com/package/http-server) 作為 Server 為例：
-
-```bash
-http-server
+```html
+<!-- ch01-before-webpack/02-history-of-js-module/import-order/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var outputStr = _.join(['Hello', ', ', 'world', '!'], ''); // Uncaught ReferenceError: _ is not defined
+    </script>
+    <script src="https://unpkg.com/lodash"></script>
+  </head>
+  <body>
+    <script>
+      console.log(outputStr); // undefined
+    </script>
+  </body>
+</html>
 ```
 
-## 結果
+在 `<script>` 中使用 Lodash 的 `_.join()` 函式，但是引入 Lodash 的 `<script>` 與叫用的 `<script>` 順序反置。
 
-在瀏覽器上開啟 Server 的網址，並開啟 Developer Tools ，在 Console 中可以看到 `Uncaught ReferenceError: _ is not defined` 的錯誤，並且緊接著輸出 `undefined` 。
+因為在使用 `_.join()` 時，尚未引入 Loadash ，由於沒有檢查的機制，導致只能在執行時發現錯誤。

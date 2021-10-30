@@ -1,29 +1,40 @@
 # iife
 
-## 目的
+## index.js
 
-演示使用 IIFE 處理內部變數衝突。
+```js
+// ch01-before-webpack/02-history-of-js-module/iife/index.js
+var output = (function () {
+  var outputStr = 'Hello, world!';
 
-## 實作
-
-使用 IIFE 避免 `index.js` 的 `output` 函式內的 `outputStr` 與 `index.html` 中的 `<script>` 內定義的 `outputStr` 發生覆蓋的問題。
-
-## 執行
-
-使用 Server 開啟 `index.html` 。
-
-以 [`http-server`](https://www.npmjs.com/package/http-server) 作為 Server 為例：
-
-```bash
-http-server
+  return function output() {
+    console.log(outputStr);
+  };
+})();
 ```
 
-## 結果
+使用 IIFE 包住變數 `outputStr` ，並回傳 `output()` 函式。
 
-在瀏覽器上開啟 Server 的網址，並開啟 Developer Tools ，在 Console 中可以看到：
+## index.html
 
-```bash
-Hello, world!
-World, hello!
-Hello, world!
+```html
+<!-- ch01-before-webpack/02-history-of-js-module/iife/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <script>
+      output(); // 'Hello, world!'
+      var outputStr = 'World, hello!';
+      console.log(outputStr); // 'World, hello!'
+      output(); // 'Hello, world!'
+    </script>
+  </body>
+</html>
 ```
+
+在引入 `index.js` 後，於 `<script>` 內兩次叫用 `output()` 函式，分別在定義 local 的 `outputStr` 之前與之後。
+
+因為 IIFE 隔開了作用域，因此 `output()` 函式的兩次叫用都輸出 `index.js` 中所定義的 `Hello, world!` ，避免了變數覆蓋的問題。

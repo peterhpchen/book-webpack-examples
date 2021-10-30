@@ -1,23 +1,40 @@
 # require-js
 
-## 目的
+## add.js
 
-演示使用 RequireJS 的導出與導入模組。
-
-## 實作
-
-使用 RequireJS 導出 `add.js` 中的 `add` 函式，並在 `index.js` 中導入 `add` 函式並叫用。
-
-## 執行
-
-使用 Server 開啟 `index.html` 。
-
-以 [`http-server`](https://www.npmjs.com/package/http-server) 作為 Server 為例：
-
-```bash
-http-server
+```js
+// ch01-before-webpack/02-history-of-js-module/require-js/add.js
+define(function () {
+  return function (a, b) {
+    return a + b;
+  };
+});
 ```
 
-## 結果
+使用 `define()` 函式導出模組。
 
-在瀏覽器上開啟 Server 的網址，並開啟 Developer Tools ，在 Console 中可以看到 `3` 。
+## index.js
+
+```js
+// ch01-before-webpack/02-history-of-js-module/require-js/index.js
+requirejs(['add'], function (add) {
+  console.log(add(1, 2)); // 3
+});
+```
+
+使用 `requirejs()` 函式導入模組，並在加載完成後，叫用 callback 函式。
+
+## index.html
+
+```html
+<!-- ch01-before-webpack/02-history-of-js-module/require-js/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script data-main="index" src="https://unpkg.com/requirejs"></script>
+  </head>
+  <body></body>
+</html>
+```
+
+引入 RequireJS 後，設定入口 `data-main` 為 `index.js` 模組。
