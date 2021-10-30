@@ -7,6 +7,5 @@
     "prestart2": "echo \"Before npm start\"",
     "start2": "echo \"Hello npm run start2\"",
     "poststart2": "echo \"After npm run start2\""
-  },
-  "license": "MIT"
+  }
 }

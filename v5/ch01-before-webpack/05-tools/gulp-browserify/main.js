@@ -1,4 +1,4 @@
-// ch01-before-webpack/05-tools/browserify/main.js
+// ch01-before-webpack/05-tools/gulp-browserify/main.js
 var add = require('./add.js');
 var subtract = require('./subtract.js');
 var multiply = require('./multiply.js');

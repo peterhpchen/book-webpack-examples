@@ -4,9 +4,8 @@
     "prestart": "browserify main.js > bundle.js",
     "start": "http-server"
   },
-  "license": "MIT",
   "devDependencies": {
-    "browserify": "17.0.0",
-    "http-server": "^0.12.3"
+    "browserify": "^17.0.0",
+    "http-server": "^14.0.0"
   }
 }
