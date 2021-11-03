@@ -1,4 +1,4 @@
-// ch02-getting-started/05-first-webpack/simple-app/public/index.js
+// ch02-getting-started/02-first-webpack/simple-app/public/index.js
 function component() {
   const element = document.createElement('div');
 

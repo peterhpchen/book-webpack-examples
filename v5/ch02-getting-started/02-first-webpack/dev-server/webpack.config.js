@@ -1,4 +1,4 @@
-// ch02-getting-started/02-first-webpack/copy-html/webpack.config.js
+// ch02-getting-started/02-first-webpack/dev-server/webpack.config.js
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 

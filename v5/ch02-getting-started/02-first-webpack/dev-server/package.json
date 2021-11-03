@@ -1,17 +1,15 @@
 {
   "description": "ch02-getting-started/02-first-webpack/dev-server/package.json",
-  "repository": "github:peterhpchen/book-webpack-examples",
-  "license": "MIT",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --mode development"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^9.0.0",
-    "css-loader": "^6.2.0",
-    "webpack": "^5.39.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.5.0",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
   },
   "dependencies": {
     "lodash": "^4.17.21"
