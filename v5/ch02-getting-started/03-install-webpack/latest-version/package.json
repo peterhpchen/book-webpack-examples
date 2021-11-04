@@ -1,9 +1,9 @@
 {
   "description": "ch02-getting-started/03-install-webpack/latest-version/package.json",
   "scripts": {
+    "install-webpack": "npm install webpack@next webpack-cli@next --save-dev",
     "version:webpack": "webpack version"
   },
-  "license": "MIT",
   "devDependencies": {
     "webpack": "^5.0.0-rc.6",
     "webpack-cli": "^4.0.0-rc.1"

@@ -1,6 +1,7 @@
 {
   "description": "ch02-getting-started/03-install-webpack/specific-branch/package.json",
   "scripts": {
+    "install-webpack": "npm install webpack/webpack#webpack-3 --save-dev",
     "version:webpack": "webpack --version"
   },
   "license": "MIT",

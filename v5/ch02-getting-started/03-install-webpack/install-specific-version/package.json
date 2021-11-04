@@ -1,9 +1,9 @@
 {
   "description": "ch02-getting-started/03-install-webpack/install-specific-version/package.json",
   "scripts": {
+    "install-webpack": "npm install webpack@3.0.0 --save-dev",
     "version:webpack": "webpack --version"
   },
-  "license": "MIT",
   "devDependencies": {
     "webpack": "^3.0.0"
   }
