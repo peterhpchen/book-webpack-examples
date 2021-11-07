@@ -3,13 +3,12 @@
   "scripts": {
     "start": "webpack serve"
   },
-  "license": "MIT",
   "devDependencies": {
-    "copy-webpack-plugin": "^9.0.0",
-    "css-loader": "^5.2.6",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.39.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
   }
 }
