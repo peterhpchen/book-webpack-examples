@@ -30,9 +30,17 @@
 
 任何技術的誕生都有其原因。
 
+#### 第一節：網頁應用程式架構的變遷
+
+> 網頁渲染的工作逐漸由後端轉為前端主導。
+
+介紹網頁應用程式因為時代的演進所形成的架構變化。
+
 #### [第二節： JavaScript 的模組化之路](v5/ch01-before-webpack/02-history-of-js-module)
 
-JavaScript 逐漸從腳本由上而下的執行方式演進為具有模組化設計的程式語言。
+> JavaScript 逐漸從腳本由上而下的執行方式演進為具有模組化設計的程式語言。
+
+由於 JavaScript 的專案規模增大，而促使原本腳本式的寫法向模組化的趨勢前進。
 
 | 頁數   | 範例                                                                               | 描述                                                                                           |
 | ------ | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -49,7 +57,9 @@ JavaScript 逐漸從腳本由上而下的執行方式演進為具有模組化設
 
 #### [第三節：新技術的崛起](v5/ch01-before-webpack/03-new-tech)
 
-因應網頁使用規模擴大，許多新技術被發明以增進開發效率。
+> 因應網頁使用規模擴大，許多新技術被發明以增進開發效率。
+
+許多新技術與發明出現在網頁開發中。
 
 | 頁數   | 範例                                                                          | 描述                                            |
 | ------ | ----------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -64,7 +74,9 @@ JavaScript 逐漸從腳本由上而下的執行方式演進為具有模組化設
 
 #### [第四節：提升網頁效能](v5/ch01-before-webpack/04-performance)
 
-減少等待，增加效率。
+> 減少等待，增加效率。
+
+針對不同的環境，所需的處理也有所不同，生產環境就是執行的效率優先，而開發環境則是以能提升開發效率的功能為優先。
 
 | 頁數   | 範例                                                                         | 描述                                                               |
 | ------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -77,7 +89,9 @@ JavaScript 逐漸從腳本由上而下的執行方式演進為具有模組化設
 
 #### [第五節：各類工具的出現](v5/ch01-before-webpack/05-tools)
 
-各類工具幫助開發者構築自動化流程。
+> 各類工具幫助開發者構築自動化流程。
+
+由於前面幾節所介紹的改變發生，網頁應用也需要依賴工具的幫助來增加效率。
 
 | 頁數   | 範例                                                               | 描述                                                                                       |
 | ------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
@@ -155,9 +169,9 @@ JavaScript 逐漸從腳本由上而下的執行方式演進為具有模組化設
 
 | 頁數   | 範例                                                                             | 描述                                                                              |
 | ------ | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| _2-55_ | [dev-server](v5/ch02-getting-started/07-use-dev-server/dev-server)               | 演示 DevServer 預設的自動重整功能                                                 |
 | _2-55_ | [dev-server-config](v5/ch02-getting-started/07-use-dev-server/dev-server-config) | 使用 DevServer 作為開發伺服器，並使用配置檔設定 Hot Module Replacement            |
 | _2-56_ | [dev-server-auto](v5/ch02-getting-started/07-use-dev-server/dev-server-auto)     | 使用 `CopyWebpackPlugin` 使建置流程包含 `index.html` ，避免需要配置 `contentBase` |
-| _2-57_ | [dev-server](v5/ch02-getting-started/07-use-dev-server/dev-server)               | 演示 DevServer 預設的自動重整功能                                                 |
 
 ### [第三章：配置 webpack](v5/ch03-configuration)
 
@@ -167,35 +181,34 @@ JavaScript 逐漸從腳本由上而下的執行方式演進為具有模組化設
 
 配置物件為設定 webpack 的主要手段。
 
-| 頁數       | 範例                                                                                             | 描述                                                                |
-| ---------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| _3-3_      | [config-file](v5/ch03-configuration/01-configuration-object/config-file)                         | 使用 CLI 載入導出配置物件的配置檔                                   |
-| _3-3_      | [node-api](v5/ch03-configuration/01-configuration-object/node-api)                               | 使用 Node.js API 載入配置物件                                       |
-| （未收入） | [webpack-init](v5/ch03-configuration/01-configuration-object/webpack-init)                       | 可以啟動 `webpack init` 產生 **created-by-webpack-init** 專案的專案 |
-| （未收入） | [created-by-webpack-init](v5/ch03-configuration/01-configuration-object/created-by-webpack-init) | 由 `webpack init` 所產生的專案                                      |
+| 頁數  | 範例                                                                                             | 描述                                                                                                                      |
+| ----- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| _3-3_ | [config-file](v5/ch03-configuration/01-configuration-object/config-file)                         | 使用 CLI 載入導出配置物件的配置檔                                                                                         |
+| _3-3_ | [node-api](v5/ch03-configuration/01-configuration-object/node-api)                               | 使用 Node.js API 載入配置物件                                                                                             |
+| _3-8_ | [webpack-init](v5/ch03-configuration/01-configuration-object/webpack-init)                       | 可以啟動 `webpack init` 產生 **created-by-webpack-init** 專案的專案                                                       |
+| _3-8_ | [created-by-webpack-init](v5/ch03-configuration/01-configuration-object/created-by-webpack-init) | 由 `webpack init` 所產生的專案，說明請參考範例 [webpack-init](v5/ch03-configuration/01-configuration-object/webpack-init) |
 
 #### [第二節：入口 Entry](v5/ch03-configuration/02-entry)
 
 講解 webpack 配置項 `entry` 的使用方式。
 
-| 頁數       | 範例                                                                                          | 描述                                                                        |
-| ---------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| _3-10_     | [entry-default](v5/ch03-configuration/02-entry/entry-default)                                 | 預設的 `entry` 配置                                                         |
-| _3-11_     | [entry-string](v5/ch03-configuration/02-entry/entry-string)                                   | 使用字串設置 `entry`                                                        |
-| _3-12_     | [entry-array](v5/ch03-configuration/02-entry/entry-array)                                     | 使用陣列設置多個入口                                                        |
-| _3-13_     | [entry-object](v5/ch03-configuration/02-entry/entry-object)                                   | 使用物件以指定的 `key` 值設定不同的入口，並以 `key` 為區別輸出複數個 bundle |
-| _3-14_     | [entry-object-array](v5/ch03-configuration/02-entry/entry-object-array)                       | 使用物件以指定的 `key` 值配置有名稱的 bundle ，並以陣列設定多個入口         |
-| _3-15_     | [entry-object-object-string](v5/ch03-configuration/02-entry/entry-object-object-string)       | 以物件為物件的值時， `import` 屬性可以設定入口點                            |
-| _3-15_     | [entry-object-object-array](v5/ch03-configuration/02-entry/entry-object-object-array)         | 以物件為物件的值時， `import` 屬性以陣列設定多個入口點                      |
-| _3-15_     | [entry-object-object-filename](v5/ch03-configuration/02-entry/entry-object-object-filename)   | 以物件為物件的值時， `filename` 屬性可以設定 bundle 的檔案名稱              |
-| _3-16_     | [entry-object-object-depend-on](v5/ch03-configuration/02-entry/entry-object-object-depend-on) | 以物件為物件的值時，使用 `dependOn` 設定相依資源                            |
-| _3-17_     | [entry-object-object-runtime](v5/ch03-configuration/02-entry/entry-object-object-runtime)     | 以物件為物件的值時，使用 `runtime` 屬性提取 runtime 的程式碼為獨立的檔案    |
-| _3-19_     | [entry-func](v5/ch03-configuration/02-entry/entry-func)                                       | 使用函式設定 `entry` ，延遲入口點的載入時機                                 |
-| _3-19_     | [entry-func-array](v5/ch03-configuration/02-entry/entry-func-array)                           | 使用函式設定 `entry` ，並且以陣列為回傳值，延遲多個入口點的載入時機         |
-| _3-20_     | [entry-func-promise](v5/ch03-configuration/02-entry/entry-func-promise)                       | 使用函式設定 `entry` ，並且傳回 promise ，以非同步的方式載入入口點          |
-| _3-20_     | [diff-type-entry](v5/ch03-configuration/02-entry/diff-type-entry)                             | 設定非 JavaScript 類型的入口點                                              |
-| _3-21_     | [context](v5/ch03-configuration/02-entry/context)                                             | 使用 `context` 設定基底路徑                                                 |
-| （未收入） | [entry-object-object](v5/ch03-configuration/02-entry/entry-object-object)                     | 以物件為物件的值的範例                                                      |
+| 頁數   | 範例                                                                                          | 描述                                                                        |
+| ------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| _3-10_ | [entry-default](v5/ch03-configuration/02-entry/entry-default)                                 | 預設的 `entry` 配置                                                         |
+| _3-11_ | [entry-string](v5/ch03-configuration/02-entry/entry-string)                                   | 使用字串設置 `entry`                                                        |
+| _3-12_ | [entry-array](v5/ch03-configuration/02-entry/entry-array)                                     | 使用陣列設置多個入口                                                        |
+| _3-13_ | [entry-object](v5/ch03-configuration/02-entry/entry-object)                                   | 使用物件以指定的 `key` 值設定不同的入口，並以 `key` 為區別輸出複數個 bundle |
+| _3-14_ | [entry-object-array](v5/ch03-configuration/02-entry/entry-object-array)                       | 使用物件以指定的 `key` 值配置有名稱的 bundle ，並以陣列設定多個入口         |
+| _3-15_ | [entry-object-object-string](v5/ch03-configuration/02-entry/entry-object-object-string)       | 以物件為物件的值時， `import` 屬性可以設定入口點                            |
+| _3-15_ | [entry-object-object-array](v5/ch03-configuration/02-entry/entry-object-object-array)         | 以物件為物件的值時， `import` 屬性以陣列設定多個入口點                      |
+| _3-15_ | [entry-object-object-filename](v5/ch03-configuration/02-entry/entry-object-object-filename)   | 以物件為物件的值時， `filename` 屬性可以設定 bundle 的檔案名稱              |
+| _3-16_ | [entry-object-object-depend-on](v5/ch03-configuration/02-entry/entry-object-object-depend-on) | 以物件為物件的值時，使用 `dependOn` 設定相依資源                            |
+| _3-17_ | [entry-object-object-runtime](v5/ch03-configuration/02-entry/entry-object-object-runtime)     | 以物件為物件的值時，使用 `runtime` 屬性提取 runtime 的程式碼為獨立的檔案    |
+| _3-19_ | [entry-func](v5/ch03-configuration/02-entry/entry-func)                                       | 使用函式設定 `entry` ，延遲入口點的載入時機                                 |
+| _3-19_ | [entry-func-array](v5/ch03-configuration/02-entry/entry-func-array)                           | 使用函式設定 `entry` ，並且以陣列為回傳值，延遲多個入口點的載入時機         |
+| _3-20_ | [entry-func-promise](v5/ch03-configuration/02-entry/entry-func-promise)                       | 使用函式設定 `entry` ，並且傳回 promise ，以非同步的方式載入入口點          |
+| _3-20_ | [diff-type-entry](v5/ch03-configuration/02-entry/diff-type-entry)                             | 設定非 JavaScript 類型的入口點                                              |
+| _3-21_ | [context](v5/ch03-configuration/02-entry/context)                                             | 使用 `context` 設定基底路徑                                                 |
 
 #### [第三節：輸出 Output](v5/ch03-configuration/03-output)
 

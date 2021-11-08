@@ -1,3 +1,4 @@
+'use strict';
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -6,24 +7,30 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["common"],{
-
-/***/ "./app/msgCommon.js":
-/*!**************************!*\
+(self['webpackChunk'] = self['webpackChunk'] || []).push([
+  ['common'],
+  {
+    /***/ './app/msgCommon.js':
+      /*!**************************!*\
   !*** ./app/msgCommon.js ***!
   \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+      /***/ (
+        __unused_webpack_module,
+        __webpack_exports__,
+        __webpack_require__
+      ) => {
+        eval(
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("index");\n\n\n//# sourceURL=webpack:///./app/msgCommon.js?'
+        );
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"index\");\n\n\n//# sourceURL=webpack:///./app/msgCommon.js?");
-
-/***/ })
-
-},
-/******/ __webpack_require__ => { // webpackRuntimeModules
-/******/ "use strict";
-/******/ 
-/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./app/msgCommon.js"));
-/******/ }
+        /***/
+      },
+  },
+  /******/ (__webpack_require__) => {
+    // webpackRuntimeModules
+    /******/ var __webpack_exec__ = (moduleId) =>
+      __webpack_require__((__webpack_require__.s = moduleId));
+    /******/ var __webpack_exports__ = __webpack_exec__('./app/msgCommon.js');
+    /******/
+  },
 ]);
