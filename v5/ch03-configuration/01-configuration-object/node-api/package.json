@@ -1,10 +1,9 @@
 {
   "description": "ch03-configuration/01-configuration-object/node-api/package.json",
-  "license": "MIT",
   "scripts": {
     "build": "node ./build.js"
   },
   "devDependencies": {
-    "webpack": "^5.39.0"
+    "webpack": "^5.61.0"
   }
 }
