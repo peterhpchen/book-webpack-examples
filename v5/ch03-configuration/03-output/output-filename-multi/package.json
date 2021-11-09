@@ -1,13 +1,12 @@
 {
   "description": "ch03-configuration/03-output/output-filename-multi/package.json",
-  "license": "MIT",
   "scripts": {
     "build:argv": "webpack --output-filename bundle.[name].js",
     "build:file": "webpack --config webpack.config.demo.js",
     "build:error": "webpack --config webpack.config.error.js"
   },
   "devDependencies": {
-    "webpack": "^5.41.0",
-    "webpack-cli": "^4.7.2"
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
   }
 }

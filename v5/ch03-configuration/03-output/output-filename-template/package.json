@@ -1,6 +1,5 @@
 {
   "description": "ch03-configuration/03-output/output-filename-template/package.json",
-  "license": "MIT",
   "scripts": {
     "build:name": "webpack --config webpack.config.name.js",
     "build:id": "webpack --config webpack.config.id.js",
@@ -10,7 +9,7 @@
     "build:escape": "webpack --config webpack.config.escape.js"
   },
   "devDependencies": {
-    "webpack": "^5.41.0",
-    "webpack-cli": "^4.7.2"
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
   }
 }

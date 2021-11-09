@@ -1,6 +1,5 @@
 {
   "description": "ch03-configuration/03-output/output-path/package.json",
-  "license": "MIT",
   "scripts": {
     "build:argv": "webpack --output-path $PWD/build",
     "build:argv2": "webpack --output-path build",
@@ -8,7 +7,7 @@
     "build:file": "webpack --config webpack.config.demo.js"
   },
   "devDependencies": {
-    "webpack": "^5.41.0",
-    "webpack-cli": "^4.7.2"
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
   }
 }

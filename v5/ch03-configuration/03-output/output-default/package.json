@@ -1,12 +1,11 @@
 {
   "description": "ch03-configuration/03-output/output-default/package.json",
-  "license": "MIT",
   "scripts": {
     "build": "webpack",
     "build:file": "webpack --config webpack.config.demo.js"
   },
   "devDependencies": {
-    "webpack": "^5.36.2",
-    "webpack-cli": "^4.7.0"
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
   }
 }
