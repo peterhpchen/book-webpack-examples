@@ -1,6 +1,7 @@
-const { parseQuery } = require('loader-utils');
-
 module.exports = function (source) {
-  const params = (this.resourceQuery && parseQuery(this.resourceQuery)) || {};
-  return `${source} + ' ${params.name}'`;
+  const params = new URLSearchParams(this.resourceQuery.slice(1));
+  if (params.has('name')) {
+    return source.replace("';", ` ${params.get('name')}'`);
+  }
+  return source;
 };

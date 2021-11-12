@@ -9,7 +9,7 @@ module.exports = {
           {
             loader: 'css-loader',
           },
-          (info) => console.log(info) || 'sass-loader',
+          (info) => console.log(info.issuer) || 'sass-loader',
         ],
       },
     ],

@@ -263,17 +263,16 @@
 
 本節為 `module` 屬性的設定方式解說的第二篇，講解 `module` 屬性如何設定處理程序。
 
-| 頁數       | 範例                                                                         | 描述                                      |
-| ---------- | ---------------------------------------------------------------------------- | ----------------------------------------- |
-| _3-67_     | [use-string](v5/ch03-configuration/06-module-use/use-string)                 | 使用字串設定 loader 的來源                |
-| _3-68_     | [use-obj](v5/ch03-configuration/06-module-use/use-obj)                       | 使用物件設定 loader 的來源與設定參數      |
-| _3-69_     | [use-func](v5/ch03-configuration/06-module-use/use-func)                     | 使用函式設定 loader                       |
-| _3-70_     | [use-array](v5/ch03-configuration/06-module-use/use-array)                   | 使用陣列設定多個 loader                   |
-| _3-72_     | [use-short](v5/ch03-configuration/06-module-use/use-short)                   | 使用簡寫減少 `use` 一層的 loader 設定     |
-| _3-74_     | [loader-order](v5/ch03-configuration/06-module-use/loader-order)             | 使用 `enforce` 改變預設 loader 的載入順序 |
-| _3-77_     | [no-parse](v5/ch03-configuration/06-module-use/no-parse)                     | 使用 `noParse` 屬性避免解析特定模組       |
-| _3-78_     | [parser](v5/ch03-configuration/06-module-use/parser)                         | 使用 `parser` 決定特定模組語意如何設定    |
-| （未收入） | [use-loader-options](v5/ch03-configuration/06-module-use/use-loader-options) | 演示使用 `options` 設定 loader            |
+| 頁數   | 範例                                                             | 描述                                      |
+| ------ | ---------------------------------------------------------------- | ----------------------------------------- |
+| _3-67_ | [use-string](v5/ch03-configuration/06-module-use/use-string)     | 使用字串設定 loader 的來源                |
+| _3-68_ | [use-obj](v5/ch03-configuration/06-module-use/use-obj)           | 使用物件設定 loader 的來源與設定參數      |
+| _3-69_ | [use-func](v5/ch03-configuration/06-module-use/use-func)         | 使用函式設定 loader                       |
+| _3-70_ | [use-array](v5/ch03-configuration/06-module-use/use-array)       | 使用陣列設定多個 loader                   |
+| _3-72_ | [use-short](v5/ch03-configuration/06-module-use/use-short)       | 使用簡寫減少 `use` 一層的 loader 設定     |
+| _3-74_ | [loader-order](v5/ch03-configuration/06-module-use/loader-order) | 使用 `enforce` 改變預設 loader 的載入順序 |
+| _3-77_ | [no-parse](v5/ch03-configuration/06-module-use/no-parse)         | 使用 `noParse` 屬性避免解析特定模組       |
+| _3-78_ | [parser](v5/ch03-configuration/06-module-use/parser)             | 使用 `parser` 決定特定模組語意如何設定    |
 
 #### [第七節：插件 Plugins](v5/ch03-configuration/07-plugins)
 

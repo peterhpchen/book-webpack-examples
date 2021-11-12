@@ -1,18 +1,14 @@
 {
-  "name": "use-array",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "build": "webpack",
     "build:multiple-rules": "webpack --config webpack.config.multiple-rules.js"
   },
   "devDependencies": {
-    "css-loader": "^5.2.6",
-    "sass": "^1.35.1",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.0.0",
-    "webpack": "^5.42.0",
-    "webpack-cli": "^4.7.2"
+    "css-loader": "^6.5.1",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1"
   }
 }
