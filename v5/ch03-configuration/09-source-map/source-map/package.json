@@ -1,8 +1,5 @@
 {
-  "name": "source-map",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "ch03-configuration/09-source-map/source-map/package.json",
   "scripts": {
     "dev": "http-server ./dist & webpack --mode production --watch --devtool source-map"
   },
