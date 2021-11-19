@@ -1,15 +1,11 @@
 {
-  "name": "without-source-map",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "dev": "http-server ./dist & webpack --mode production --watch"
   },
   "devDependencies": {
-    "http-server": "^0.12.3",
-    "webpack": "^5.42.0",
-    "webpack-cli": "^4.7.2"
+    "http-server": "^14.0.0",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
     "lodash": "^4.17.21"

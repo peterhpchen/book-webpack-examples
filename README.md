@@ -298,12 +298,11 @@
 
 講解 Source Map 的功用及原理。
 
-| 頁數       | 範例                                                                         | 描述                                                   |
-| ---------- | ---------------------------------------------------------------------------- | ------------------------------------------------------ |
-| _3-91_     | [without-source-map](v5/ch03-configuration/09-source-map/without-source-map) | 演示在開發時，沒有 source map 的困難                   |
-| _3-93_     | [source-map](v5/ch03-configuration/09-source-map/source-map)                 | 演示使用 source map 解決開發時程式碼對應至原始碼的問題 |
-| _3-97_     | [babel-source-map](v5/ch03-configuration/09-source-map/babel-source-map)     | 以 Babel 說明 source map 的原理                        |
-| （未收入） | [simple-source-map](v5/ch03-configuration/09-source-map/simple-source-map)   | 操作 webpack 建置帶有 source map 的 bundle             |
+| 頁數   | 範例                                                                         | 描述                                                   |
+| ------ | ---------------------------------------------------------------------------- | ------------------------------------------------------ |
+| _3-91_ | [without-source-map](v5/ch03-configuration/09-source-map/without-source-map) | 演示在開發時，沒有 source map 的困難                   |
+| _3-93_ | [source-map](v5/ch03-configuration/09-source-map/source-map)                 | 演示使用 source map 解決開發時程式碼對應至原始碼的問題 |
+| _3-97_ | [babel-source-map](v5/ch03-configuration/09-source-map/babel-source-map)     | 以 Babel 說明 source map 的原理                        |
 
 #### [第十節： Dev Tool](v5/ch03-configuration/10-devtool)
 
